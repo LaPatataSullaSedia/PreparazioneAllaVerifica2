@@ -9,9 +9,13 @@ import { Input } from '@angular/core';
 })
 export class MacchinaComponent implements OnInit {
 @Input () macchina: string = "";
+componenti: string[];
 constructor () {
+  this.componenti = ['patate', 'carote', 'broccoli', 'prezzemolo']; 
+
 }
 ngOnInit(): void {
   
 }
+ 
 }
